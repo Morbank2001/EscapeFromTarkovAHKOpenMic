@@ -43,7 +43,7 @@ Loop
 	if (peakValue >= threshold && !boolEnableMute && !boolKeyDown){
 	boolKeyDown := true
 	Send {%VOIPKey% down}
-	SetTimer, VOIPdown, %voipDownTime%
+	SetTimer, VOIPdown, -%voipDownTime%
 	}
 
     Sleep, %deviceperiod%
